@@ -28,7 +28,10 @@ PORT=3000
 MONGODB_URI=mongodb+srv://usuario:password@cluster.mongodb.net/database?retryWrites=true&w=majority
 JWT_SECRET=tu_secreto_jwt_super_seguro_cambiar_en_produccion
 NODE_ENV=development
+OPENAI_API_KEY=sk-tu_api_key_de_openai_aqui
 ```
+
+**Nota:** Reemplaza `MONGODB_URI` con tu URI de conexión real de MongoDB Atlas o local.
 
 3. Ejecutar seed para poblar la base de datos:
 ```bash
@@ -142,10 +145,16 @@ src/
 
 ```
 PORT=3000
-MONGODB_URI=mongodb+srv://...
-JWT_SECRET=tu_secreto_jwt
+MONGODB_URI=mongodb+srv://usuario:password@cluster.mongodb.net/database?retryWrites=true&w=majority
+JWT_SECRET=tu_secreto_jwt_super_seguro_cambiar_en_produccion
 NODE_ENV=development
+OPENAI_API_KEY=sk-tu_api_key_de_openai_aqui
 ```
+
+**Importante:** 
+- Reemplaza `MONGODB_URI` con tu URI de conexión real de MongoDB
+- Configura `OPENAI_API_KEY` con tu clave de API de OpenAI para habilitar las funciones de IA
+- Usa un `JWT_SECRET` seguro y único en producción
 
 ## Docker
 
